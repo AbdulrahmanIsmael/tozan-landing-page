@@ -3,7 +3,7 @@ import { FaXTwitter, FaBluesky, FaThreads } from 'react-icons/fa6';
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-y-8 border-t border-t-gray-200 pt-3">
+    <footer className="flex flex-col gap-y-8 border-t border-t-gray-200 py-3">
       <div className="flex items-center justify-between">
         <h1 className="text-4xl font-extrabold">tozan.</h1>
         <ul className="flex items-center gap-x-3">
