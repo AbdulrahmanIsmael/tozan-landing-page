@@ -1,5 +1,5 @@
-import ArrowDownIcon from '@/app/ui/svgs/ArrowDown';
-import SparklesIcon from '@/app/ui/svgs/Sparkles';
+import { FaChevronDown } from 'react-icons/fa6';
+import { HiSparkles } from 'react-icons/hi';
 
 export default function Header() {
   return (
@@ -7,22 +7,22 @@ export default function Header() {
       <h1 className="text-4xl font-extrabold">tozan.</h1>
       <nav className="flex items-center gap-x-3.5">
         <ul className="flex items-center gap-x-6">
-          <li className="cursor-pointer flex items-center gap-x-0.5">
+          <li className="cursor-pointer flex items-center gap-x-1">
             <span>Members</span>
-            <ArrowDownIcon />
+            <FaChevronDown size={15} />
           </li>
-          <li className="cursor-pointer flex items-center gap-x-0.5">
+          <li className="cursor-pointer flex items-center gap-x-1">
             <span>Archive</span>
-            <ArrowDownIcon />
+            <FaChevronDown size={15} />
           </li>
-          <li className="cursor-pointer flex items-center gap-x-0.5">
+          <li className="cursor-pointer flex items-center gap-x-1">
             <span>Resources</span>
-            <ArrowDownIcon />
+            <FaChevronDown size={15} />
           </li>
           <li className="cursor-pointer flex items-center gap-x-1">
             <span>Top authors</span>
-            <SparklesIcon />
-            <ArrowDownIcon />
+            <HiSparkles size={15} color="orange" />
+            <FaChevronDown size={15} />
           </li>
         </ul>
         <a href=".">Get Theme</a>

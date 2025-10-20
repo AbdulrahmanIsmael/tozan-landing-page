@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import '@/app/ui/globals.css';
-import { inter } from './ui/fonts';
-import Header from './layouts/Header';
+import { inter } from '@/app/ui/fonts';
+import Header from '@/app/layouts/Header';
+import Footer from '@/app/layouts/Footer';
 
 export const metadata: Metadata = {
   title: 'Tozan',
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased px-7`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
