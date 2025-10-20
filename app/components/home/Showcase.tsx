@@ -3,8 +3,11 @@ import { tags } from '@/app/lib/placeholder-data';
 
 export default function Showcase() {
   return (
-    <section className="py-6 flex flex-col gap-y-10">
-      <div role="heading" className="text-8xl font-semibold">
+    <section className="py-6 flex flex-col gap-y-12">
+      <div
+        role="heading"
+        className="text-5xl md:text-8xl max-md:text-center font-semibold"
+      >
         Your journey is here.
       </div>
       <div
