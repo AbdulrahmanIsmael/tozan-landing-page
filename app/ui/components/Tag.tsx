@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { motion } from 'motion/react';
 
 export default function Tag({
   src = '',
@@ -6,15 +7,22 @@ export default function Tag({
   text,
   bg,
   textColor,
+  index = null,
 }: {
   src?: string;
   alt?: string;
   text: string;
   bg: string;
   textColor: string;
+  index?: number | null;
 }) {
   return (
-    <div
+    <motion.div
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      transition={{
+        delay: index ? index * 0.09 : 0,
+      }}
       role="gridcell"
       className={`${bg} max-w-fit flex ${!src ? 'rounded-4xl' : 'rounded-lg'}`}
     >
@@ -28,6 +36,6 @@ export default function Tag({
         />
       )}
       <p className={`${textColor} py-3 px-2`}>{text}</p>
-    </div>
+    </motion.div>
   );
 }
