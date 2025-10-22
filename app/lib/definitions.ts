@@ -4,5 +4,4 @@ export interface I_tag {
   alt?: string;
   bg: string;
   textColor: string;
-  key: string;
 }
