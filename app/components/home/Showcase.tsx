@@ -28,12 +28,12 @@ export default function Showcase() {
       >
         {textInArray.map((l, i) =>
           l === " " ? (
-            <span className="font-semibold text-4xl md:text-7xl" key={i}>
+            <span className="font-semibold text-5xl md:text-8xl" key={i}>
               &nbsp;
             </span>
           ) : (
             <motion.span
-              className="font-semibold text-4xl md:text-7xl"
+              className="font-semibold text-5xl md:text-8xl"
               key={i}
               variants={{
                 hidden: { opacity: 0, y: -100 },

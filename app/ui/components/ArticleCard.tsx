@@ -1,8 +1,15 @@
 import Image from "next/image";
 
-export default function ArticleCard() {
+export default function ArticleCard({
+  featured = false,
+}: {
+  featured?: boolean;
+}) {
   return (
-    <div role="gridcell">
+    <div
+      role="gridcell"
+      className={`${featured && "bg-white p-3.5 rounded-4xl"}`}
+    >
       <Image
         width={100}
         height={100}

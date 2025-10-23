@@ -11,6 +11,7 @@ export default function Articles() {
       whileInView={{
         x: 0,
       }}
+      viewport={{ once: true }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="flex flex-col gap-y-10 py-5 border-t border-t-gray-200"
     >
