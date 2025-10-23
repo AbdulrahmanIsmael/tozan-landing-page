@@ -8,7 +8,7 @@ export default function TopicCard() {
       className="cursor-pointer bg-white py-5 px-5 flex justify-between items-start w-full rounded-4xl"
     >
       <div>
-        <h3 className="mb-3 hover:underline cursor-pointer text-2xl font-medium">
+        <h3 className="mb-3 hover:underline cursor-pointer text-[22px] font-medium">
           Love in the digital age
         </h3>
         <p className="font-normal text-lg text-gray-600">
