@@ -1,5 +1,5 @@
-import { FaFacebook, FaTiktok, FaInstagram } from 'react-icons/fa';
-import { FaXTwitter, FaBluesky, FaThreads } from 'react-icons/fa6';
+import { FaFacebook, FaTiktok, FaInstagram } from "react-icons/fa";
+import { FaXTwitter, FaBluesky, FaThreads } from "react-icons/fa6";
 
 export default function Footer() {
   return (
