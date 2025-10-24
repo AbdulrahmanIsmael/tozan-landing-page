@@ -5,7 +5,9 @@ export default function Footer() {
   return (
     <footer className="flex flex-col gap-y-8 border-t border-t-gray-200 py-3">
       <div className="flex items-center flex-col sm:flex-row justify-between gap-y-3">
-        <h1 className="text-4xl font-extrabold">tozan.</h1>
+        <a href="." className="text-4xl font-extrabold">
+          tozan.
+        </a>
         <ul className="flex items-center gap-x-3">
           <li>
             <a href=".">

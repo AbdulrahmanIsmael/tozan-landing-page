@@ -24,16 +24,19 @@ export default function Showcase() {
           },
         }}
         role="heading"
-        className="max-md:text-center"
+        className="max-md:text-center whitespace-nowrap"
       >
         {textInArray.map((l, i) =>
           l === " " ? (
-            <span className="font-semibold text-5xl md:text-8xl" key={i}>
+            <span
+              className="font-medium text-4xl md:text-7xl break-words whitespace-normal"
+              key={i}
+            >
               &nbsp;
             </span>
           ) : (
             <motion.span
-              className="font-semibold text-5xl md:text-8xl"
+              className="font-medium text-4xl md:text-7xl break-words whitespace-normal"
               key={i}
               variants={{
                 hidden: { opacity: 0, y: -100 },
@@ -48,10 +51,10 @@ export default function Showcase() {
       </motion.div>
       <div
         role="grid"
-        className="grid place-items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2"
+        className="overflow-auto flex flex-nowrap lg:grid place-items-center lg:grid-cols-6 gap-2 py-2"
       >
         {tags.map((tag, index) => (
-          <div key={index}>
+          <div key={index} className="shrink-0">
             <Tag {...tag} index={index} />
           </div>
         ))}

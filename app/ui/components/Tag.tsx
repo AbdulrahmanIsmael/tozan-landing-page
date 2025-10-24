@@ -18,11 +18,10 @@ export default function Tag({
 }) {
   return (
     <motion.div
-      initial={{ scale: 0 }}
-      animate={{ scale: 1 }}
-      whileHover={{ scale: 1.1, transition: { delay: 0 }, cursor: "pointer" }}
-      transition={{
-        delay: index ? index * 0.09 : 0,
+      whileHover={{
+        translateY: -5,
+        transition: { delay: 0 },
+        cursor: "pointer",
       }}
       role="gridcell"
       className={`${bg} max-w-fit flex ${!src ? "rounded-4xl" : "rounded-lg"}`}
@@ -37,7 +36,7 @@ export default function Tag({
         />
       )}
       <p
-        className={`${textColor} text-center text-[clamp(15px, 5vw, 20px)] overflow-hidden font-medium py-5 ${
+        className={`${textColor} text-center text-[clamp(14px, 5vw, 20px)] overflow-hidden font-medium py-5 ${
           src ? "pl-2 pr-6" : "pl-5 pr-5"
         }`}
         title={text}

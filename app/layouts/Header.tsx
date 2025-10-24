@@ -12,22 +12,24 @@ export default function Header() {
   };
 
   return (
-    <header className="flex flex-col lg:flex-row items-center justify-between py-1">
-      <div className="max-lg:w-full flex items-center justify-between">
-        <h1 className="text-5xl tracking-tighter font-bold">tozan.</h1>
+    <header className="flex flex-col xl:flex-row items-center justify-between py-1">
+      <div className="max-xl:w-full flex items-center justify-between">
+        <a href="." className="text-5xl tracking-tighter font-bold">
+          tozan.
+        </a>
         <IoMenu
           role="button"
           size={30}
-          className="cursor-pointer lg:hidden"
+          className="cursor-pointer xl:hidden"
           onClick={handleShowMenu}
         />
       </div>
       <nav
         className={`flex flex-col ${
-          showMenu ? "max-lg:flex" : "max-lg:hidden"
-        } gap-y-5 lg:flex-row items-center gap-x-3.5 transition-all ease duration-1000`}
+          showMenu ? "max-xl:flex" : "max-xl:hidden"
+        } gap-y-5 xl:flex-row items-center gap-x-3.5 transition-all ease duration-1000`}
       >
-        <ul className="flex text-xl font-normal flex-col gap-y-4 pt-5 lg:pt-0 lg:flex-row items-center gap-x-6">
+        <ul className="flex text-xl font-normal flex-col gap-y-4 pt-5 xl:pt-0 xl:flex-row items-center gap-x-6">
           <li className="cursor-pointer flex items-center gap-x-1">
             <span>Members</span>
             <FaChevronDown size={15} />
